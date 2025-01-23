@@ -1,33 +1,40 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
 const TextChange = () => {
-  const texts = ["Hi, I'm Nikhil", "Hi, I'm Nikhil", "Hi, I'm Nikhil"];
-  const [currenText, setCurrentText] = useState("");
-  const [endValue, setendValue] = useState(true);
+  const texts = [
+    "Full Stack Developer", 
+    "Frontend Developer", 
+    "Web Developer"
+  ];
+  const [currentText, setCurrentText] = useState("");
+  const [endValue, setEndValue] = useState(0);
   const [isForward, setIsForward] = useState(true);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentText(texts[index].substring(0, endValue));
       if (isForward) {
-        setendValue((prev) => prev + 1);
+        if (endValue <= texts[index].length) {
+          setCurrentText(texts[index].substring(0, endValue));
+          setEndValue(prev => prev + 1);
+        } else {
+          setIsForward(false);
+        }
       } else {
-        setendValue((prev) => prev - 1);
+        if (endValue > 0) {
+          setCurrentText(texts[index].substring(0, endValue));
+          setEndValue(prev => prev - 1);
+        } else {
+          setIsForward(true);
+          setIndex(prev => (prev + 1) % texts.length);
+        }
       }
-      if (endValue > texts[index].length + 10) {
-        setIsForward(false);
-      }
-      if (endValue < 2.1) {
-        setIsForward(true);
-        setIndex((prev) => prev & texts.length);
-      }
-    }, 50);
+    }, 100);
 
     return () => clearInterval(intervalId);
   }, [endValue, isForward, index, texts]);
 
-  return <div className="transition ease duration-300">{currenText}</div>;
+  return <span className="transition ease duration-300">{currentText}</span>;
 };
 
 export default TextChange;

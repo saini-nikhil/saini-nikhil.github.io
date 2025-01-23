@@ -4,10 +4,12 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./Components/Projects/Projects";
+import Extra from "./Components/Extra";
 
 function App() {
   return (
     <div className="bg-[#171d32] h-auto w-full overflow-hidden">
+      {/* <Extra /> */}
       <Navbar />
       <Home />
       <About />
