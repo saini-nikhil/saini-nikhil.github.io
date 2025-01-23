@@ -1,20 +1,36 @@
 import React from "react";
-import bannerImg from "../../assets/photo-C8q0KQHG.webp";
-const ProjectCard = ({ title, main }) => {
+// import nutriscanImg from "../../assets/nutriscan.png"; // Make sure to uncomment the correct image import
+
+const ProjectCard = ({ title, main, image, demoLink, sourceLink }) => {
   return (
-    <div className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl">
-      <img className="p-4" src={bannerImg} alt="" />
-      <h3 className="px-4 text-xl md:text-2xl font-bold leading-normal">
-        {title}
-      </h3>
-      <p className="px-4 text-sm md:text-md leading-tight py-2">{main}</p>
-      <div className="mt-2 p-2 md:p-4 flex gap-2 md:gap-4">
-        <button className="md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+    <div className="relative p-4 md:p-6 flex flex-col w-full max-w-xs bg-[#1e1e2f] shadow-xl rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+      <img 
+        className="p-4 rounded-lg object-cover h-48 w-full transition-all duration-500 hover:scale-110" 
+        src={image} 
+        alt={`Banner for ${title}`} 
+      />
+      <div className="absolute top-4 left-4 z-10 text-white font-semibold bg-opacity-50 bg-black px-2 py-1 rounded-full text-xs">
+        New
+      </div>
+      <h3 className="text-xl md:text-2xl font-bold text-white px-4 mt-4">{title}</h3>
+      <p className="text-sm md:text-md text-gray-300 px-4 py-2">{main}</p>
+      <div className="mt-4 p-2 md:p-4 flex gap-4 justify-between">
+        <a 
+          href={demoLink} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-[#4A90E2] border-2 border-[#4A90E2] text-white rounded-full text-sm font-semibold hover:bg-transparent hover:text-[#4A90E2] transition duration-300"
+        >
           Demo
-        </button>
-        <button className="md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-          Source Code
-        </button>
+        </a>
+        <a 
+          href={sourceLink} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-[#5A5A5A] border-2 border-[#5A5A5A] text-white rounded-full text-sm font-semibold hover:bg-transparent hover:text-[#5A5A5A] transition duration-300"
+        >
+          Code
+        </a>
       </div>
     </div>
   );
