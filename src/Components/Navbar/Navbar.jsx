@@ -47,6 +47,9 @@ const Navbar = () => {
           <a href="#Projects" className="hover:text-blue-500">Projects</a>
         </li>
         <li className="text-md transition-all duration-300 p-3 md:p-0 text-center md:text-left">
+          <a href="#GitStats" className="hover:text-blue-500">GitStats</a>
+        </li>
+        <li className="text-md transition-all duration-300 p-3 md:p-0 text-center md:text-left">
           <a href="#Footer" className="hover:text-blue-500">Contact</a>
         </li>
       </ul>
