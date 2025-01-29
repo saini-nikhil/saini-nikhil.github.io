@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectCard = ({ title, main, image, demoLink, sourceLink }) => {
   return (
-    <div className="relative p-4 md:p-6 flex flex-col w-full max-w-xs bg-[#1e1e2f] shadow-xl rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+    <div className="relative p-4 md:p-6 flex flex-col w-full max-w-xs bg-gray-800 shadow-xl rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
       <img 
         className="p-4 rounded-lg object-cover h-48 w-full transition-all duration-500 hover:scale-110" 
         src={image} 

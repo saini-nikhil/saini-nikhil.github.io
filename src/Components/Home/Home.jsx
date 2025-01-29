@@ -5,7 +5,8 @@ import {
   FaGithub,
   FaLink,
 } from "react-icons/fa";
-import avatarImg from "../../assets/myavtr.jpg";
+// import avatarImg from "../../assets/myavtr.jpg";
+import avatarImg from "../../assets/passport.jpeg";
 import TextChange from "../TextChange";
 
 const Home = () => {

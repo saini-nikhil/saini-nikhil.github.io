@@ -5,8 +5,7 @@ import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./Components/Projects/Projects";
 import Extra from "./Components/Extra";
-import GitStats from "./Components/GitStats";
-import GitCalender from "./Components/GitCalender";
+import GitHubStats from "./Components/GitHubStats ";
 
 function App() {
   return (
@@ -17,8 +16,9 @@ function App() {
       <About />
       <Experience />
       <Projects />
-      <GitStats />
+      {/* <GitStats /> */}
       {/* <GitCalender /> */}
+      <GitHubStats />
       <Footer />
     </div>
   );
