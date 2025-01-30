@@ -6,7 +6,7 @@ import {
   FaLink,
 } from "react-icons/fa";
 // import avatarImg from "../../assets/myavtr.jpg";
-import avatarImg from "../../assets/passport.jpeg";
+import avatarImg from "../../assets/photo8.png";
 import TextChange from "../TextChange";
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-center justify-center py-16 px-4 max-w-7xl mx-auto">
         {/* Profile Picture */}
-        <div className="w-60 h-60 rounded-full overflow-hidden border-8 border-gray-700 shadow-lg mb-10 md:mb-0 md:mr-16">
+        <div className="w-60 h-65 rounded-full overflow-hidden border-8 border-gray-700 shadow-lg mb-10 md:mb-0 md:mr-16">
           <img
             src={avatarImg}
             alt="profile"
