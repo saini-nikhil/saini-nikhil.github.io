@@ -44,7 +44,7 @@ import {
             </p>
             <div className="flex justify-center md:justify-start space-x-4 mb-6">
               <a
-                href="https://drive.google.com/file/d/1v8pjU7e5DVyA06jSR2QHEkna2oWzmGOQ/view?usp=sharing"
+                href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=67cd40423bc96bedb0b4ecae"
                 target="_blank"
                 className="px-6 py-3 bg-gray-800 border-2 border-gray-400 rounded-full text-gray-200 hover:bg-blue-500 hover:border-blue-500"
               >

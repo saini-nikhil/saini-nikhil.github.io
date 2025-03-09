@@ -3,15 +3,25 @@ import ProjectCard from "./ProjectCard";
 import nutriscanImg from "../../assets/nutriscan.png";
 import mealmasterImg from "../../assets/MealMaster.png";
 import virtualclasroomImg from "../../assets/virtualclasroom.png";
+import aiFoodFinderImg from "../../assets/AiFoodFinderimg.png";
+
 
 const Projects = () => {
   const projectsData = [
+    {
+      title: "AI Food Finder",
+      main: "AI Food Finder is a smart voice assistant that helps users discover the top 5 or 10 restaurants in their area. It also features an AI-powered recipe generator for home cooking and a Gemini chatbot for interactive support. Built using React, Firebase, and ZegoCloud for seamless user interaction.",
+      image: aiFoodFinderImg,
+      demoLink: "https://aifoodfinder.vercel.app", 
+      sourceLink: "https://github.com/saini-nikhil/AiFoodFinder", 
+      techStack: ["React", "Firebase Authentication", "Gemini AI", "Tailwind CSS", "Google Maps Api"]
+    },
     {
       title: "NutriScan App",
       main: "QR-based app that scans food QR codes to provide instant calorie and nutritional information, helping users track their dietary intake and make informed food choices.",
       image: nutriscanImg,
       demoLink: "https://nutri-scan-site.vercel.app/",
-      sourceLink: "https://github.com/jitenverma076/Nutri-scan",
+      sourceLink: "https://github.com/saini-nikhil/NutriScan",
       techStack: ["React", "Node.js", "Firebase", "Tailwind CSS", "QR API" , "MongoDb"]
     },
     {
@@ -30,6 +40,8 @@ const Projects = () => {
       sourceLink: "https://github.com/saini-nikhil/Virtual_class_room",
       techStack: ["React", "Firbase Authentication", "ZegoCloud", "Tailwind CSS"]
     }
+   
+    
   ];
 
   return (
