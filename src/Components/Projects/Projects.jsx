@@ -6,7 +6,9 @@ import virtualclasroomImg from "../../assets/virtualclasroom.png";
 import aiFoodFinderImg from "../../assets/AiFoodFinderimg.png";
 
 
+
 const Projects = () => {
+
   const projectsData = [
     {
       title: "AI Food Finder",
@@ -56,6 +58,13 @@ const Projects = () => {
             {...project}
           />
         ))}
+      </div>
+      <div className="flex justify-center">
+        <a href="https://show-projects-tan.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-300">
+            More Projects
+          </button>
+        </a>
       </div>
     </div>
   );

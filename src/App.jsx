@@ -16,8 +16,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
-      {/* <GitStats /> */}
-      {/* <GitCalender /> */}
+    
       <GitHubStats />
       <Footer />
     </div>
